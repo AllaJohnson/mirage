@@ -7,5 +7,6 @@ class CreatePrices < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :prices, :vendor_product_id
   end
 end

@@ -6,5 +6,7 @@ class CreateVendorProducts < ActiveRecord::Migration
 
       t.timestamps
     end
+    add_index :vendor_products, :vendor_id
+    add_index :vendor_products, :product_id
   end
 end
