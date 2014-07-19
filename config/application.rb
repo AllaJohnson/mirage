@@ -17,9 +17,10 @@ module Mirage
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
-    #config.autoload_paths += %W(#{config.root}/app/models/vendors)
     
-    # Require all *.rb files from /lib and /model/vendors folders
+    config.autoload_paths += %W(#{Rails.root}/app/models/vendors)
+    
+    # Require all *.rb files from /lib and /models/vendors folders
     # Dir["./lib/*.rb"].each {|file| require file }
     # Dir["./app/models/vendors/*.rb"].each {|file| require file }
 
